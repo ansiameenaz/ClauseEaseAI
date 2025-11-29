@@ -38,7 +38,10 @@ The project maintains a clean, separation-of-concerns architecture:
 ClauseEase_Demo/
 
  ├── .streamlit/
-    └── config.toml # Streamlit global theme configuration (colors, font)
+    
+    
+   └── config.toml # Streamlit global theme configuration (colors, font)
+ 
  |
 
  ├── venv/   # Virtual Environment (IGNORED by Git)
