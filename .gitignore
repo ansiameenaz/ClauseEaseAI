@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+.env
+.env.*
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Byte-compiled / caches
+.pytest_cache/
+
+# Logs
+*.log
+
+# Streamlit temp files (if any)
+*.tmp
