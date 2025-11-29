@@ -36,13 +36,21 @@ Methodology: The system employs a core Chunking & Map-Reduce strategy to break l
 The project maintains a clean, separation-of-concerns architecture:
 
 ClauseEase_Demo/
+
 ├── .streamlit/
-│   └── config.toml         # Streamlit global theme configuration (colors, font)
-├── venv/                   # Virtual Environment (IGNORED by Git)
-├── app2.py                 # Core Streamlit application, UI layout, LLM logic, and data pipeline
-├── style.css               # Custom CSS for the "Notepad" minimalist aesthetic
-├── .gitignore              # Ensures venv/ and temporary files are not committed
+
+│   └── config.toml 
+# Streamlit global theme configuration (colors, font)
+├── venv/   
+# Virtual Environment (IGNORED by Git)
+├── app2.py  
+# Core Streamlit application, UI layout, LLM logic, and data pipeline
+├── style.css  
+# Custom CSS for the "Notepad" minimalist aesthetic
+├── .gitignore 
+# Ensures venv/ and temporary files are not committed
 └── README.md
+
 
 **🚀 Setup and Installation**
 
@@ -64,26 +72,22 @@ Step 2: Set up the Python Environment
 Clone the Repository:
 
 **git clone [YOUR_GITHUB_REPOSITORY_URL]
-cd ClauseEase_Demo
-**
+cd ClauseEase_Demo**
 
 Create and Activate Virtual Environment:
 
 **python -m venv venv
-.\venv\Scripts\activate  # For Windows PowerShell
-**
+.\venv\Scripts\activate  # For Windows PowerShell**
 
 Install Python Dependencies:
 
-**pip install streamlit ollama pypdf python-docx
-**
+**pip install streamlit ollama pypdf python-docx**
 
 Step 3: Run the Application
 
 With the virtual environment active and the Ollama model running, launch the app:
 
-**streamlit run app2.py
-**
+**streamlit run app2.py**
 
 The application will automatically open in your web browser, ready to analyze documents.
 
@@ -91,7 +95,7 @@ The application will automatically open in your web browser, ready to analyze do
 
 The system is engineered to manage memory and ensure all of the document is processed:
 
-Extraction: User uploads file $\rightarrow$ **app2.py **uses pypdf/python-docx to extract text.
+Extraction: User uploads file $\rightarrow$ **app2.py**uses pypdf/python-docx to extract text.
 
 Temporary JSON Storage: Raw text is stored momentarily in a JSON file to ensure the data is clean and isolated.
 
