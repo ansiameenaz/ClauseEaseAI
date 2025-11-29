@@ -1,8 +1,8 @@
-⚖️ ClauseEase AI: Local Contract Language Simplifier
+**⚖️ ClauseEase AI: Local Contract Language Simplifier**
 
 ClauseEase AI is a privacy-first web application designed to instantly simplify complex legal documents (contracts, NDAs, Terms of Service) into plain, easily understandable English. It leverages a local Large Language Model (LLM) powered by Ollama to ensure zero data transmission to the cloud, protecting sensitive information.
 
-✨ Features
+**✨ Features**
 
 Privacy-First Architecture: All document analysis runs locally on your machine via Ollama.
 
@@ -16,7 +16,7 @@ Dynamic UX: Features a clean, custom "Notepad" UI and real-time progress timers 
 
 Contextual Q&A: Maintains conversation history and answers follow-up questions specifically based on the content of the uploaded document.
 
-🛠️ Technology Stack (Narrative Format)
+**🛠️ Technology Stack**
 
 The ClauseEase AI system is built upon a specialized, privacy-focused technology stack:
 
@@ -31,7 +31,7 @@ AI Model: The project relies on the Llama 3.2 (3B) model, chosen specifically fo
 Data Pipeline: Data ingestion involves specialized libraries: pypdf and python-docx for text extraction, and json and tempfile for temporary JSON storage to manage the chunking workflow.
 
 Methodology: The system employs a core Chunking & Map-Reduce strategy to break large documents into manageable segments, ensuring both memory efficiency and comprehensive processing.
-⚙️ Project Structure
+**⚙️ Project Structure**
 
 The project maintains a clean, separation-of-concerns architecture:
 
@@ -44,7 +44,7 @@ ClauseEase_Demo/
 ├── .gitignore              # Ensures venv/ and temporary files are not committed
 └── README.md
 
-🚀 Setup and Installation
+**🚀 Setup and Installation**
 
 This application requires Python 3.10+ and the Ollama application to be running locally.
 
@@ -54,7 +54,7 @@ Download and Install Ollama: Download the application installer from the officia
 
 Download the Required Model: Open your terminal (PowerShell or Command Prompt) and pull the optimized Llama 3.2 model:
 
-ollama pull llama3.2:3b
+**ollama pull llama3.2:3b**
 
 
 Ensure the Ollama service is running in the background.
@@ -63,28 +63,28 @@ Step 2: Set up the Python Environment
 
 Clone the Repository:
 
-git clone [YOUR_GITHUB_REPOSITORY_URL]
+**git clone [YOUR_GITHUB_REPOSITORY_URL]
 cd ClauseEase_Demo
-
+**
 
 Create and Activate Virtual Environment:
 
-python -m venv venv
+**python -m venv venv
 .\venv\Scripts\activate  # For Windows PowerShell
 # source venv/bin/activate  # For macOS/Linux
-
+**
 
 Install Python Dependencies:
 
-pip install streamlit ollama pypdf python-docx
-
+**pip install streamlit ollama pypdf python-docx
+**
 
 Step 3: Run the Application
 
 With the virtual environment active and the Ollama model running, launch the app:
 
-streamlit run app2.py
-
+**streamlit run app2.py
+**
 
 The application will automatically open in your web browser, ready to analyze documents.
 
@@ -92,7 +92,7 @@ The application will automatically open in your web browser, ready to analyze do
 
 The system is engineered to manage memory and ensure all of the document is processed:
 
-Extraction: User uploads file $\rightarrow$ app2.py uses pypdf/python-docx to extract text.
+Extraction: User uploads file $\rightarrow$ **app2.py **uses pypdf/python-docx to extract text.
 
 Temporary JSON Storage: Raw text is stored momentarily in a JSON file to ensure the data is clean and isolated.
 
