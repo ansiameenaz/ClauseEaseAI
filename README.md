@@ -37,19 +37,19 @@ The project maintains a clean, separation-of-concerns architecture:
 
 ClauseEase_Demo/
 
-├── .streamlit/
+ ├── .streamlit/
+    └── config.toml # Streamlit global theme configuration (colors, font)
+ |
 
-│   └── config.toml # Streamlit global theme configuration (colors, font)
+ ├── venv/   # Virtual Environment (IGNORED by Git)
 
-├── venv/   # Virtual Environment (IGNORED by Git)
+ ├── app2.py  # Core Streamlit application, UI layout, LLM logic, and data pipeline
 
-├── app2.py  # Core Streamlit application, UI layout, LLM logic, and data pipeline
+ ├── style.css  # Custom CSS for the "Notepad" minimalist aesthetic
 
-├── style.css  # Custom CSS for the "Notepad" minimalist aesthetic
+ ├── .gitignore # Ensures venv/ and temporary files are not committed
 
-├── .gitignore # Ensures venv/ and temporary files are not committed
-
-└── README.md
+ └── README.md
 
 
 #  Setup and Installation
