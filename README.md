@@ -1,8 +1,8 @@
-**⚖️ ClauseEase AI: Local Contract Language Simplifier**
+# ⚖️ ClauseEase AI: Local Contract Language Simplifier
 
 ClauseEase AI is a privacy-first web application designed to instantly simplify complex legal documents (contracts, NDAs, Terms of Service) into plain, easily understandable English. It leverages a local Large Language Model (LLM) powered by Ollama to ensure zero data transmission to the cloud, protecting sensitive information.
 
-**✨ Features**
+# ✨ Features
 
 Privacy-First Architecture: All document analysis runs locally on your machine via Ollama.
 
@@ -16,7 +16,7 @@ Dynamic UX: Features a clean, custom "Notepad" UI and real-time progress timers 
 
 Contextual Q&A: Maintains conversation history and answers follow-up questions specifically based on the content of the uploaded document.
 
-**🛠️ Technology Stack**
+# 🛠️ Technology Stack
 
 The ClauseEase AI system is built upon a specialized, privacy-focused technology stack:
 
@@ -31,7 +31,7 @@ AI Model: The project relies on the Llama 3.2 (3B) model, chosen specifically fo
 Data Pipeline: Data ingestion involves specialized libraries: pypdf and python-docx for text extraction, and json and tempfile for temporary JSON storage to manage the chunking workflow.
 
 Methodology: The system employs a core Chunking & Map-Reduce strategy to break large documents into manageable segments, ensuring both memory efficiency and comprehensive processing.
-**⚙️ Project Structure**
+# ⚙️ Project Structure
 
 The project maintains a clean, separation-of-concerns architecture:
 
@@ -52,7 +52,7 @@ ClauseEase_Demo/
 └── README.md
 
 
-**#🚀 Setup and Installation**
+#  Setup and Installation
 
 This application requires Python 3.10+ and the Ollama application to be running locally.
 
@@ -91,7 +91,7 @@ With the virtual environment active and the Ollama model running, launch the app
 
 The application will automatically open in your web browser, ready to analyze documents.
 
-📝 Document Processing Pipeline
+# 📝 Document Processing Pipeline
 
 The system is engineered to manage memory and ensure all of the document is processed:
 
