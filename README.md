@@ -39,20 +39,20 @@ ClauseEase_Demo/
 
 ├── .streamlit/
 
-│   └── config.toml 
-# Streamlit global theme configuration (colors, font)
-├── venv/   
-# Virtual Environment (IGNORED by Git)
-├── app2.py  
-# Core Streamlit application, UI layout, LLM logic, and data pipeline
-├── style.css  
-# Custom CSS for the "Notepad" minimalist aesthetic
-├── .gitignore 
-# Ensures venv/ and temporary files are not committed
+│   └── config.toml # Streamlit global theme configuration (colors, font)
+
+├── venv/   # Virtual Environment (IGNORED by Git)
+
+├── app2.py  # Core Streamlit application, UI layout, LLM logic, and data pipeline
+
+├── style.css  # Custom CSS for the "Notepad" minimalist aesthetic
+
+├── .gitignore # Ensures venv/ and temporary files are not committed
+
 └── README.md
 
 
-**🚀 Setup and Installation**
+**#🚀 Setup and Installation**
 
 This application requires Python 3.10+ and the Ollama application to be running locally.
 
