@@ -71,7 +71,6 @@ Create and Activate Virtual Environment:
 
 **python -m venv venv
 .\venv\Scripts\activate  # For Windows PowerShell
-# source venv/bin/activate  # For macOS/Linux
 **
 
 Install Python Dependencies:
